@@ -3,24 +3,24 @@
 <head> 
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
 <title>WELCOME TO EKERENYO SUNSHINE </title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 <link rel="stylesheet" href="p1.css">
+<link rel="stylesheet" href="all.min.css">
  </head>
  <body>  
  	<section class="header">
  		<nav>
  			<a href=""> <img src="logo.png">
  			<div class="links" id="navLinks">
- 				<i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
  				<ul>
  					<li><a href="">HOME</a></li>
  					<li><a href="">SCHOOL</a></li>
- 					<li><a href="LOGIN/index.html">STUDENT PORTAL</a></li>
- 					<li><a href="LOGIN/index.html">STAFF PORTAL</a></li>
+ 					<li><a href="login/index.html">STUDENT PORTAL</a></li>
+ 					<li><a href="login/index.html">STAFF PORTAL</a></li>
  					<li><a href="">ABOUT</a></li>
  					<li><a href="">CONTACT US</a></li> 
  			</div>
- 			<i class="fa fa-bars" onclick="showMenu()"></i>
+ 			<i class="fa-solid fa-bars" onClick="showMenu()"></i>
  		</nav>
  	</section>
  	<section  class="text1">
@@ -33,13 +33,14 @@
 <script>
 var navLinks = document.getElementById("navLinks");
 function showMenu(){
-	navLinks.style.right = "0";
+	navLinks.style.right = "-20px";
 }
 function hideMenu(){
 	navLinks.style.right = "-200px";
 
-
+}
 </script>
+<script src="https://kit.fontawesome.com/09f46d91f0.js" crossorigin="anonymous"></script>
 	<!--- services pallet--->
 <section >
 
