@@ -50,7 +50,7 @@ nav{
 .links ul li a{
 	color: white;
 	text-decoration:none;
-	text-size:14px;
+	size:14px;
 }
 /*adding line animation below navigation text but not working at the moment*/
 .links ul li::after{
@@ -100,7 +100,7 @@ width: 100%;
     transition: 3s;
  }
 
-nav .fa{
+nav.fa{
 	display:none;
 }
    
@@ -136,11 +136,15 @@ nav .fa{
  		padding:30px;
  	}
  }
+ 
  .courses{
- 	width:80%;
+ 	width:100%;
  	margin:auto;
  	text-align: center;
- 	padding-top:20px;
+ 	padding-top:0px;
+	margin:0;
+	border:0;
+	clear: none;
  }
  h1{
  	font-size:36px;
@@ -159,7 +163,7 @@ nav .fa{
  	justify-content: space-between;
  }
  .coursetype{
-    flex-basis: 31%;
+    flex-basis: 21%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -215,20 +219,21 @@ h3{
 }
 */
 .testimonials{
-	width:80%;
-	margin:5px;
+	width:50%;
+	margin:15px;
 	padding-top: 10px;
 	text-align:center;
 	align-items: center;
 	align-content: center;
 }
 .testimonial-col{
-	flex-basis:44%;
+	/*flex basis is the column size*/
+	flex-basis:1%;
 	border-radius: 10px;
 	margin-bottom:5%;
 	text-align:center;
 	background:#fff3f3;
-	padding:25px;
+	padding:10px;
 	cursor:pointer;
 	display: flex;
 }
@@ -247,8 +252,58 @@ h3{
 	text-align: center;
 }
 
+footer{
+	
+	
+	position: relative;
+	bottom:20;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+	color:#fff;
+	padding: 1px;
+	border-top-left-radius:250px;
+	font-size:13px;
+	line-height: 15px;
+}
 
+.row{
+	width:85%;
+	margin:auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.col{
+/*flex basis determines the amount of columns there are, defines how much percentage each column takes*/ 
+	flex-basis:20%;
+	padding:15px;
+}
+.logo{
+	width:150px;
+	margin-bottom: 10px;
+}
+.col h3{
+	width: fit-content;
+	margin-bottom: 10px;
+	position: relative;
 
+}
+.emailid{
+	width:fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+}
+ul li{
+	list-style: none;
+	margin-bottom:10px;
+
+}
+/*contents of the unordered lists*/
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	line-height: 30px;
+}
 
 
 
