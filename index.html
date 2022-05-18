@@ -13,12 +13,13 @@
  			<div class="links" id="navLinks">
                 <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
  				<ul>
- 					<li><a href="">HOME</a></li>
+ 					<li><a href="p1.html">HOME</a></li>
  					<li><a href="">SCHOOL</a></li>
  					<li><a href="LOGIN/index.html">STUDENT PORTAL</a></li>
  					<li><a href="LOGIN/index.html">STAFF PORTAL</a></li>
- 					<li><a href="">ABOUT</a></li>
+ 					<li><a href="aboutus.html">ABOUT US</a></li>
  					<li><a href="">CONTACT US</a></li> 
+					 <li><a href="FEEDBACK.html">FEEDBACK</a></li> 
  			</div>
  			<i class="fa-solid fa-bars" onClick="showMenu()"></i>
  		</nav>
@@ -30,23 +31,17 @@
 
  	</section>
  	<!----javascript for toggle menu-->
-<script>
+<SCRIPT>
 var navLinks = document.getElementById("navLinks");
 function showMenu(){
-	navLinks.style.right = "-20px";
+	navLinks.style.right = "0px";
 }
 function hideMenu(){
 	navLinks.style.right = "-200px";
 
 }
-</script>
-<script>if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.getElementById("YOUR ID").href = "#"; 
-}
-else {
-    document.getElementById("YOUR ID").removeAttribute("href");
-}
-</script>
+</SCRIPT>
+
 <script src="https://kit.fontawesome.com/09f46d91f0.js" crossorigin="anonymous"></script>
 	<!--- services pallet--->
 <section >
@@ -67,6 +62,10 @@ else {
             </div>
             <div class="coursetype">
                 <h3>Upper Primary</h3>
+            <p>Students who are between class 5 and class 8orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei</p>
+            </div>
+			<div class="coursetype">
+                <h3>Pre-School</h3>
             <p>Students who are between class 5 and class 8orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei</p>
             </div>
         </div>
@@ -116,6 +115,40 @@ else {
 
         </section>
 ------>
+<footer>
+	<div class="row">
+		<div class="col">
+			<img src="logo150.png" class="logo">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi 
+				esse nulla tempore, rem repellendus cum in perspiciatis. Molestiae aliquam evenie</p>
+		</div>
+		<div class="col">
+			<h3>OFFICE</h3>
+			<p>Ekerenyo Main Road</p>
+			<p>Nyamira County in Nyanza</p>
+			<p>P.O Box 170 Ikonge</p>
+			<p class="emailid">ekerenyosunshineacademy@gmail.com</p>
+			<h4>+254712689840</h4>
+		</div>
+		<div class="col">
+			<h3>Links</h3>
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">SERVICES</a></li>
+				<li><a href="">HOME</a></li>
+				<li><a href="">ABOUT US</a></li>
+				<li><a href="">CONTACTS</a></li>
+				
+			</ul>
+		</div>
+		<div class="col">
+			<h3>Newsletter</h3>
+			<form>
+				<input type="Email" name="Enter your email address">
+			</form>
+		</div>
+	</div>
+</footer>
     </body>
 </html>
 
