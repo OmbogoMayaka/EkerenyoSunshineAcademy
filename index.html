@@ -22,21 +22,37 @@
  			</div>
  			<i class="fa-solid fa-bars" onclick="showMenu()"></i>
  		</nav>
+		 
  	</section>
  	<section  class="text1">
  	<h1>Welcome To Ekerenyo Sunshine Academy</h1>
  	<p>We are the leading private school in Nyamira county offering the best services ever</p> <br>
+	 <p><span id='date-time'></span>.</p>
  	<a href="" class="button">Enroll Now</a>	
+	 <script>
+		var dt = new Date();
+		console.log(dt);
+		document.getElementById('date-time').innerHTML=dt;
+		</script>
+		<script>
+			function refreshTime() {
+			const timeDisplay = document.getElementById("time");
+			const dateString = new Date().toLocaleString();
+			const formattedString = dateString.replace(", ", " - ");
+			timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
+		</script>
 
  	</section>
  	<!----javascript for toggle menu-->
 <SCRIPT>
 var navLinks = document.getElementById("navLinks");
 function showMenu(){
-	navLinks.style.right = "0px";
+	navLinks.style.top = "0px";
 }
 function hideMenu(){
-	navLinks.style.right = "-200px";
+	navLinks.style.bottom ="-1000px";
 
 }
 </SCRIPT>
@@ -70,7 +86,8 @@ function hideMenu(){
         </div>
 
         </section>
-        <!---testimonials--->
+		
+        <!---testimonials----->
         <section class="testimonials">	
         	<h1>What our students say</h1>
         	<p> Lorem ipsum dolor sit amet, consectetur adipis</p>
@@ -130,6 +147,7 @@ function hideMenu(){
         	
         	
         </section>
+		
         <!----gallary section-
        
         <section class="Gallery">
